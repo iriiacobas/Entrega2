@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish:wght@900&family=Roboto:wght@400;800&display=swap');
+
+* {
+    margin:10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height: 50px;
+    background-color:rgb(88, 127, 218);
+}
+
+h1{
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+    text-transform: uppercase;
+ }
+
+ main > div {
+    display: flex;
+    justify-content: space-between; 
+ } 
+
+ main > div img {
+    width: 48%; 
+    margin: 5%; 
+    height: 500px; 
+}
+
+p span {
+    text-transform: capitalize;
+ }
+
+div a {
+    display:block;
+    background-color: #d9d9d9;
+    padding: 10px; 
+    width: auto;
+    border-radius: 5px;
+    height: 70px;
+}
+
+a {
+    color: #2c313f;
+    text-decoration: none;
+    transition: color 4s 2s linear;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: yellow;
+    color: white;
+    width: 500px;
+}
+
+section h2,
+section p,
+section h3 + p, 
+section h4 + p {
+    width: 33.33%;
+    padding: 6px;
+}
+
+ h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+ }
+
+[src="imagenes/imagen 6.png"] {
+    width: 50%;
+    transition: all 2s 1s linear;
+    border-radius: 10px 20%;
+    margin:0 auto;
+    display: block;
+    border: 3px solid black;
+}
+
+[src="imagenes/imagen 6.png"]:hover 
+{
+    filter: grayscale(100%); 
+    border-radius: 0;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+
+h3 span,
+h4 span {
+    text-decoration: underline;
+}
+
+[src="imagenes/imagen 3.png"] {
+    border-width: 15px 3px;
+    border-style: dotted solid;
+    border-color: red yellow;
+}
+
+[src="imagenes/imagen 5.png"] {
+    border: 3px red;
+    border-style: ridge;
+    border-bottom-color: green;
+}
+
+[src="imagenes/imagen 3.png"]:hover,
+[src="imagenes/imagen 5.png"]:hover {
+    filter: blur(5px);
+}
+
+ @media(max-width:768px) {
+
+    body {
+        font-size: 0.625em;
+        margin-bottom: 50px;
+    }
+
+    * {
+        line-height: 3.125em;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+}
